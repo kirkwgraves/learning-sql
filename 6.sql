@@ -1,1 +1,1 @@
-SELECT * FROM Invoice WHERE BillingCountry == 'Brazil'
+SELECT * FROM Invoice JOIN Customer.CustomerId ON Invoice.CustomerId WHERE BillingCountry == 'Brazil';
